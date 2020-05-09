@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="container" style="height: 425px;">
+        <div class="card-group" style="height: auto;">
+            <div class="card">
+                <div class="card-body" style="height: auto;">
+                    <div class="row padMar">
+                        <div class="col padMar">
+                            <form class="input-group" asp-action="Search" method="get">
+                                <div class="input-group-prepend"></div><input class="form-control autocomplete" type="text" placeholder="Search Torrents!" name="searchString">
+                                <div class="input-group-append"><input class="btn btn-dark" type="submit" value="Search"></div>
+                            </form>
+                        </div>
+                    </div>
+                    <p class="text-center" style="padding-top: 66px;">qTorrent is a tribute to the torrentz.eu.</p>
+                </div>
+            </div>
+        </div>
+    </div>

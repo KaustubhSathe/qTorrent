@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Torrent>
+
+<table id="myTable" class="table table-striped table-bordered" style="width:100%;">
+    <thead>
+        <tr>
+            <th>Source</th>
+            <th>Name</th>
+            <th>Size</th>
+            <th>Seeders</th>
+            <th>Leechers</th>
+            <th>Upload Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model) { 
+            <tr>
+                <td>@item.Source</td>
+                <td><a href=@item.Link>@item.Name</a></td>
+                <td>@item.Size</td>
+                <td>@item.Seeders</td>
+                <td>@item.Leechers</td>
+                <td>@item.UploadDate</td>
+            </tr>
+        }
+    </tbody>
+</table>
