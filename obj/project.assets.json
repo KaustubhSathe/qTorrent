@@ -6780,19 +6780,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kaustubh\\.nuget\\packages\\": {}
+    "C:\\Users\\f2015\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kaustubh\\source\\repos\\qTorrent\\qTorrent.csproj",
+      "projectUniqueName": "C:\\Users\\f2015\\Source\\Repos\\qTorrent\\qTorrent.csproj",
       "projectName": "qTorrent",
-      "projectPath": "C:\\Users\\Kaustubh\\source\\repos\\qTorrent\\qTorrent.csproj",
-      "packagesPath": "C:\\Users\\Kaustubh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kaustubh\\source\\repos\\qTorrent\\obj\\",
+      "projectPath": "C:\\Users\\f2015\\Source\\Repos\\qTorrent\\qTorrent.csproj",
+      "packagesPath": "C:\\Users\\f2015\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\f2015\\Source\\Repos\\qTorrent\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Kaustubh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\f2015\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
