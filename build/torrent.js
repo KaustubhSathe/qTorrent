@@ -24,3 +24,4 @@ const schema = new mongoose_1.default.Schema({
     UploadDate: Number
 }, { versionKey: false });
 exports.torrent = mongoose_1.default.model('torrents', schema);
+//# sourceMappingURL=torrent.js.map

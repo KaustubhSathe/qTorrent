@@ -11,8 +11,8 @@ const path_1 = __importDefault(require("path"));
 const mongoose_1 = __importDefault(require("mongoose"));
 const torrent_1 = require("./torrent");
 const allow_prototype_access_1 = require("@handlebars/allow-prototype-access");
-const connectionURL = "mongodb+srv://kaustubh:Sekizo7777@qtorrent-pvg1r.mongodb.net/store?retryWrites=true&w=majority";
-mongoose_1.default.connect(connectionURL, { useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
+const config_1 = require("./config");
+mongoose_1.default.connect(config_1.connectionURL, { useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
     console.log("Connected to mongo database.");
 });
 const port = process.env.PORT || 5000;
@@ -59,3 +59,4 @@ app.get("/search", async (req, res) => {
     }
 });
 app.listen(port, () => console.log(`hosting @${port}`));
+//# sourceMappingURL=server.js.map

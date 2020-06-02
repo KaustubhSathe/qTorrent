@@ -23,12 +23,12 @@ const schema:mongoose.Schema = new mongoose.Schema({
 export const torrent = mongoose.model('torrents', schema);
 
 export interface fields{
-    Seeders: number,
-    Leechers: number,
-    Source: string,
-    Name: string,
-    Link: string,
-    _id: string,
-    Size: number,
-    UploadDate: number
+    Seeders?: number,
+    Leechers?: number,
+    Source?: string,
+    Name?: string,
+    Link?: string,
+    _id?: string,
+    Size?: number,
+    UploadDate?: number
 }

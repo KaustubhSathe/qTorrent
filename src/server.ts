@@ -6,12 +6,12 @@ import path from "path";
 import mongoose from "mongoose";
 import { torrent}from "./torrent";
 import {allowInsecurePrototypeAccess} from "@handlebars/allow-prototype-access";
-const connectionURL = "mongodb+srv://kaustubh:Sekizo7777@qtorrent-pvg1r.mongodb.net/store?retryWrites=true&w=majority";
+import {connectionURL} from "./config";
 mongoose.connect(connectionURL,{useNewUrlParser:true,useUnifiedTopology:true},(err) => {
     console.log("Connected to mongo database.")
 });
 const port : string|number= process.env.PORT || 5000;
-const app: express.Application = express();
+const app: express.Application = express(); 
 
 app.use(helmet());
 app.use(express.json());

@@ -2,7 +2,7 @@
   "name": "qtorrent",
   "version": "1.0.0",
   "description": "Torrent Search Engine",
-  "main": "parser.js",
+  "main": "build/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "tsc",
@@ -21,11 +21,13 @@
   "homepage": "https://github.com/KaustubhSathe/qTorrent#readme",
   "dependencies": {
     "@handlebars/allow-prototype-access": "^1.0.3",
+    "@types/cheerio": "^0.22.18",
     "@types/express": "^4.17.6",
     "@types/express-handlebars": "^3.1.0",
     "@types/helmet": "0.0.47",
     "@types/mongoose": "^5.7.21",
     "@types/node": "^14.0.9",
+    "@types/puppeteer": "^3.0.0",
     "axios": "^0.19.2",
     "cheerio": "^1.0.0-rc.3",
     "express": "^4.17.1",
