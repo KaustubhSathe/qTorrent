@@ -10,15 +10,15 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model) { 
+        {{#each torrents}}
             <tr>
-                <td>@item.Source</td>
-                <td><a href=@item.Link>@item.Name</a></td>
-                <td>@item.Size</td>
-                <td>@item.Seeders</td>
-                <td>@item.Leechers</td>
-                <td>@item.UploadDate</td>
+                <td>{{this.Source}}</td>
+                <td><a href={{this.Link}}>{{this.Name}}</a></td>
+                <td>{{this.Size}}</td>
+                <td>{{this.Seeders}}</td>
+                <td>{{this.Leechers}}</td>
+                <td>{{this.UploadDate}}</td>
             </tr>
-        }
+        {{/each}}
     </tbody>
 </table> 
