@@ -10,11 +10,22 @@ const path_1 = __importDefault(require("path"));
 const port = process.env.PORT || 5000;
 const app = express_1.default();
 app.use(helmet_1.default());
-app.use(express_1.default.static("public"));
+app.use(express_1.default.static(path_1.default.join(__dirname, "../src/public")));
 app.set("view engine", "hbs");
-app.set("views", path_1.default.join(__dirname, "views"));
-app.engine("hbs", express_handlebars_1.default({ defaultLayout: 'main', extname: '.hbs' }));
-app.use("/", (req, res) => {
-    res.render("index", { name: "jijoijoioij" });
+app.set("views", path_1.default.join(__dirname, "../src/views"));
+app.engine("hbs", express_handlebars_1.default({
+    defaultLayout: 'main',
+    extname: 'hbs',
+    layoutsDir: path_1.default.join(__dirname, '../src/views/layouts'),
+    partialsDir: path_1.default.join(__dirname, '../src/views'),
+}));
+app.get("/", (req, res) => {
+    res.render("index");
+});
+app.get("/about", (req, res) => {
+    res.render("about");
+});
+app.get("/feedback", (req, res) => {
+    res.render("feedback");
 });
 app.listen(port, () => console.log(`hosting @${port}`));
