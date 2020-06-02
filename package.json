@@ -1,0 +1,37 @@
+{
+  "name": "qtorrent",
+  "version": "1.0.0",
+  "description": "Torrent Search Engine",
+  "main": "parser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "start": "ts-node src/server.ts",
+    "dev": "nodemon -x ts-node src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaustubhSathe/qTorrent.git"
+  },
+  "author": "KaustubhSathe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaustubhSathe/qTorrent/issues"
+  },
+  "homepage": "https://github.com/KaustubhSathe/qTorrent#readme",
+  "dependencies": {
+    "@types/express": "^4.17.6",
+    "@types/express-handlebars": "^3.1.0",
+    "@types/helmet": "0.0.47",
+    "@types/node": "^14.0.9",
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "helmet": "^3.22.0",
+    "nodemon": "^2.0.4",
+    "puppeteer": "^3.2.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.3"
+  }
+}
