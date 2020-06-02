@@ -36,7 +36,10 @@ function getDate(inp:string) : number{
 
 
 async function parse(){
-    const browser = await puppeteer.launch({headless:true});
+    const browser = await puppeteer.launch({
+        headless:true,
+        args: ['--no-sandbox']
+    });
     const puppetPage = await browser.newPage();
     for(let cat = 0;cat<categories.length;cat++){
         let category:string = categories[cat];

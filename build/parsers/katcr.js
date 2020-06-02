@@ -34,7 +34,10 @@ function getDate(inp) {
     return (new Date()).getTime() - parseInt(inp.trim()) * 24 * 3600 * 1000;
 }
 async function parse() {
-    const browser = await puppeteer_1.default.launch({ headless: true });
+    const browser = await puppeteer_1.default.launch({
+        headless: true,
+        args: ['--no-sandbox']
+    });
     const puppetPage = await browser.newPage();
     for (let cat = 0; cat < categories.length; cat++) {
         let category = categories[cat];
