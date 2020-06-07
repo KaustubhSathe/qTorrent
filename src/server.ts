@@ -16,14 +16,14 @@ const app: express.Application = express();
 app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded());
-app.use(express.static(path.join(__dirname,"../src/public")));
+app.use(express.static(path.join(__dirname,"../public")));
 app.set("view engine","hbs");
-app.set("views",path.join(__dirname,"../src/views"));
+app.set("views",path.join(__dirname,"../views"));
 app.engine("hbs",handlebars({
     defaultLayout: 'main',
     extname: 'hbs',
-    layoutsDir: path.join(__dirname, '../src/views/layouts'),
-    partialsDir: path.join(__dirname, '../src/views'),
+    layoutsDir: path.join(__dirname, '../views/layouts'),
+    partialsDir: path.join(__dirname, '../views'),
     handlebars: allowInsecurePrototypeAccess(_handlebars)
 }));
 
