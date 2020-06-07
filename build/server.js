@@ -20,13 +20,13 @@ const app = express_1.default();
 app.use(helmet_1.default());
 app.use(express_1.default.json());
 app.use(express_1.default.urlencoded());
-app.use(express_1.default.static(path_1.default.join(__dirname, "../src/public")));
+app.use(express_1.default.static(path_1.default.join(__dirname, "../public")));
 app.set("view engine", "hbs");
-app.set("views", path_1.default.join(__dirname, "../src/views"));
+app.set("views", path_1.default.join(__dirname, "../views"));
 app.engine("hbs", express_handlebars_1.default({
     defaultLayout: 'main',
     extname: 'hbs',
-    layoutsDir: path_1.default.join(__dirname, '../src/views/layouts'),
+    layoutsDir: path_1.default.join(__dirname, '../views/layouts'),
     partialsDir: path_1.default.join(__dirname, '../src/views'),
     handlebars: allow_prototype_access_1.allowInsecurePrototypeAccess(handlebars_1.default)
 }));

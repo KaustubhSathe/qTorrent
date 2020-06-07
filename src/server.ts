@@ -23,7 +23,7 @@ app.engine("hbs",handlebars({
     defaultLayout: 'main',
     extname: 'hbs',
     layoutsDir: path.join(__dirname, '../views/layouts'),
-    partialsDir: path.join(__dirname, '../views'),
+    partialsDir: path.join(__dirname, '../src/views'),
     handlebars: allowInsecurePrototypeAccess(_handlebars)
 }));
 
